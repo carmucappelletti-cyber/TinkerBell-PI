@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Contacto | Tinker Bell</title>
+
+    <!-- AMATIC SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- FF PROVIDENCE -->
+    <link rel="stylesheet" href="https://use.typekit.net/zcc5oni.css">
+
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body class="pagina-contacto">
+
+
+    <!-- ==================================================
+         HEADER
+         ================================================== -->
+
+    <header class="header-contacto">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html">
+
+            <img src="img/Logo-Tinkerbell.png"
+                 alt="Logo de Tinker Bell">
+
+        </a>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav>
+
+            <ul>
+
+
+                <!-- PELÍCULAS + CURIOSIDADES -->
+
+                <li class="nav-desplegable">
+
+                    <a href="peliculas.html">
+                        Películas
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+
+                            <a href="curiosidades.html">
+                                Curiosidades
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- PERSONAJES -->
+
+                <li>
+
+                    <a href="personajes.html">
+                        Personajes
+                    </a>
+
+                </li>
+
+
+                <!-- PIXIE HOLLOW + SUBMENÚ -->
+
+                <li class="nav-desplegable">
+
+                    <a href="pixie-hollow.html">
+                        Pixie Hollow
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+
+                            <a href="talentos.html">
+                                Talentos
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="antagonistas.html">
+                                Antagonistas
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="estaciones.html">
+                                Estaciones
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- GALERÍA -->
+
+                <li>
+
+                    <a href="galeria.html">
+                        Galería
+                    </a>
+
+                </li>
+
+
+                <!-- CONTACTO -->
+
+                <li>
+
+                    <a href="contacto.html"
+                       class="nav-activo">
+                        Contacto
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+        <!-- LOGIN -->
+
+        <button type="button"
+                class="login-icon boton-usuario"
+                id="abrir-login"
+                aria-label="Iniciar sesión">
+
+            <img src="img/img-tinker-login.png"
+                 alt="Ingresar">
+
+        </button>
+
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTENIDO DE CONTACTO
+         ================================================== -->
+
+    <main class="contenido-contacto">
+
+
+        <!-- FONDO RAYADO -->
+
+        <img src="img/fondo contacto.png"
+             alt=""
+             class="fondo-contacto">
+
+
+        <!-- ==================================================
+             TÍTULO
+             ================================================== -->
+
+        <section class="titulo-contacto">
+
+            <h1>
+                CONTACTO
+            </h1>
+
+            <h2>
+                ¿Querés comunicarte con Pixie Hollow?
+            </h2>
+
+            <p>
+                Dejanos tu mensaje
+            </p>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             FORMULARIO
+             ================================================== -->
+
+        <section class="seccion-formulario-contacto">
+
+
+            <form class="formulario-contacto"
+                  id="form-contacto"
+                  novalidate>
+
+
+                <!-- ==================== NOMBRE ==================== -->
+
+                <div class="campo-contacto">
+
+                    <label for="contacto-nombre">
+                        Nombre
+                    </label>
+
+                    <div class="campo-contacto-entrada">
+
+                        <input type="text"
+                               id="contacto-nombre"
+                               name="nombre"
+                               autocomplete="name"
+                               required>
+
+                        <p class="error-contacto"
+                           id="error-nombre">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================== EMAIL ==================== -->
+
+                <div class="campo-contacto">
+
+                    <label for="contacto-email">
+                        Email
+                    </label>
+
+                    <div class="campo-contacto-entrada">
+
+                        <input type="email"
+                               id="contacto-email"
+                               name="email"
+                               autocomplete="email"
+                               required>
+
+                        <p class="error-contacto"
+                           id="error-email">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================== ASUNTO ==================== -->
+
+                <div class="campo-contacto">
+
+                    <label for="contacto-asunto">
+                        Asunto
+                    </label>
+
+                    <div class="campo-contacto-entrada">
+
+                        <input type="text"
+                               id="contacto-asunto"
+                               name="asunto"
+                               required>
+
+                        <p class="error-contacto"
+                           id="error-asunto">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================== MENSAJE ==================== -->
+
+                <div class="campo-contacto campo-contacto-mensaje">
+
+                    <label for="contacto-mensaje">
+                        Mensaje
+                    </label>
+
+                    <div class="campo-contacto-entrada">
+
+                        <textarea id="contacto-mensaje"
+                                  name="mensaje"
+                                  rows="4"
+                                  required></textarea>
+
+                        <p class="error-contacto"
+                           id="error-mensaje">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================== BOTÓN ==================== -->
+
+                <button type="submit"
+                        class="boton-formulario boton-enviar-contacto">
+
+                    Enviar mensaje
+
+                </button>
+
+
+
+                <!-- ==================== MENSAJE DE ÉXITO ==================== -->
+
+                <p class="exito-contacto"
+                   id="exito-contacto"
+                   role="status"
+                   aria-live="polite">
+                </p>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer class="footer-contacto">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html">
+
+            <img src="img/Logo-Tinkerbell.png"
+                 alt="Logo de Tinker Bell"
+                 class="footer-logo">
+
+        </a>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav>
+
+            <ul>
+
+
+                <!-- PELÍCULAS + CURIOSIDADES -->
+
+                <li class="nav-desplegable">
+
+                    <a href="peliculas.html">
+                        Películas
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+
+                            <a href="curiosidades.html">
+                                Curiosidades
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- PERSONAJES -->
+
+                <li>
+
+                    <a href="personajes.html">
+                        Personajes
+                    </a>
+
+                </li>
+
+
+                <!-- PIXIE HOLLOW + SUBMENÚ -->
+
+                <li class="nav-desplegable">
+
+                    <a href="pixie-hollow.html">
+                        Pixie Hollow
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+
+                            <a href="talentos.html">
+                                Talentos
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="antagonistas.html">
+                                Antagonistas
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="estaciones.html">
+                                Estaciones
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- GALERÍA -->
+
+                <li>
+
+                    <a href="galeria.html">
+                        Galería
+                    </a>
+
+                </li>
+
+
+                <!-- CONTACTO -->
+
+                <li>
+
+                    <a href="contacto.html"
+                       class="nav-activo">
+                        Contacto
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         MODAL DE USUARIO
+         ================================================== -->
+
+    <div class="modal-usuario"
+         id="modal-usuario">
+
+
+        <!-- ==================================================
+             INICIAR SESIÓN
+             ================================================== -->
+
+        <div class="modal-contenido"
+             id="modal-login">
+
+
+            <!-- CERRAR -->
+
+            <button type="button"
+                    class="cerrar-modal"
+                    aria-label="Cerrar">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Iniciar sesión
+            </h2>
+
+
+            <form id="form-login"
+                  novalidate>
+
+
+                <!-- EMAIL -->
+
+                <div class="campo-usuario">
+
+                    <label for="login-email">
+                        Email
+                    </label>
+
+                    <input type="email"
+                           id="login-email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+
+                <div class="campo-usuario">
+
+                    <label for="login-password">
+                        Contraseña
+                    </label>
+
+                    <input type="password"
+                           id="login-password"
+                           name="password"
+                           autocomplete="current-password"
+                           required>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <p class="mensaje-formulario"
+                   id="mensaje-login">
+                </p>
+
+
+                <!-- BOTÓN -->
+
+                <button type="submit"
+                        class="boton-formulario">
+
+                    Ingresar
+
+                </button>
+
+
+            </form>
+
+
+            <!-- CAMBIAR A REGISTRO -->
+
+            <div class="cambio-formulario">
+
+                <p>
+                    ¿No tenés cuenta?
+                </p>
+
+                <button type="button"
+                        id="mostrar-registro">
+
+                    Registrate acá
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             CREAR CUENTA
+             ================================================== -->
+
+        <div class="modal-contenido oculto"
+             id="modal-registro">
+
+
+            <!-- CERRAR -->
+
+            <button type="button"
+                    class="cerrar-modal"
+                    aria-label="Cerrar">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Crear cuenta
+            </h2>
+
+
+            <form id="form-registro"
+                  novalidate>
+
+
+                <!-- NOMBRE -->
+
+                <div class="campo-usuario">
+
+                    <label for="registro-nombre">
+                        Nombre
+                    </label>
+
+                    <input type="text"
+                           id="registro-nombre"
+                           name="nombre"
+                           autocomplete="given-name"
+                           required>
+
+                </div>
+
+
+                <!-- APELLIDO -->
+
+                <div class="campo-usuario">
+
+                    <label for="registro-apellido">
+                        Apellido
+                    </label>
+
+                    <input type="text"
+                           id="registro-apellido"
+                           name="apellido"
+                           autocomplete="family-name"
+                           required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="campo-usuario">
+
+                    <label for="registro-email">
+                        Email
+                    </label>
+
+                    <input type="email"
+                           id="registro-email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+
+                <div class="campo-usuario">
+
+                    <label for="registro-password">
+                        Contraseña
+                    </label>
+
+                    <input type="password"
+                           id="registro-password"
+                           name="password"
+                           autocomplete="new-password"
+                           required>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <p class="mensaje-formulario"
+                   id="mensaje-registro">
+                </p>
+
+
+                <!-- BOTÓN -->
+
+                <button type="submit"
+                        class="boton-formulario">
+
+                    Registrarme
+
+                </button>
+
+
+            </form>
+
+
+            <!-- CAMBIAR A LOGIN -->
+
+            <div class="cambio-formulario">
+
+                <p>
+                    ¿Ya tenés cuenta?
+                </p>
+
+                <button type="button"
+                        id="mostrar-login">
+
+                    Iniciá sesión
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         MENSAJE DE ÉXITO DEL LOGIN / REGISTRO
+         ================================================== -->
+
+    <div class="mensaje-exito"
+         id="mensaje-exito">
+    </div>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+         ================================================== -->
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <script src="js/contacto.js"></script>
+
+
+    <!-- LOGIN Y REGISTRO -->
+
+    <script src="js/usuario.js"></script>
+
+
+</body>
+
+</html>
