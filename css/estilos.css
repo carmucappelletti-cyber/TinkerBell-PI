@@ -137,6 +137,7 @@ header nav a {
     z-index: 1;
 
     width: 55%;
+    max-width: 850px;
     min-height: 320px;
 
     background-color: transparent;
@@ -208,6 +209,10 @@ header nav a {
     color: #59613b;
 
     text-align: right;
+}
+
+.titulo-linea {
+    white-space: nowrap;
 }
 
 
