@@ -9,23 +9,23 @@
 
 const fotosGaleria = [
 
-    "img/foto vertical 1.jpg",
-    "img/foto horizontal 1.jpg",
+    "img/foto vertical 1.JPG",
+    "img/foto horizontal 1.JPG",
 
-    "img/foto vertical 2.jpg",
-    "img/foto horizontal 2.jpg",
+    "img/foto vertical 2.JPG",
+    "img/foto horizontal 2.JPG",
 
-    "img/foto vertical 3.jpg",
-    "img/foto horizontal 3.jpg",
+    "img/foto vertical 3.JPG",
+    "img/foto horizontal 3.JPG",
 
-    "img/foto vertical 4.jpg",
-    "img/foto horizontal 4.jpg",
+    "img/foto vertical 4.JPG",
+    "img/foto horizontal 4.JPG",
 
-    "img/foto vertical 5.jpg",
-    "img/foto horizontal 5.jpg",
+    "img/foto vertical 5.JPG",
+    "img/foto horizontal 5.JPG",
 
-    "img/foto vertical 6.jpg",
-    "img/foto horizontal 6.jpg"
+    "img/foto vertical 6.JPG",
+    "img/foto horizontal 6.JPG"
 
 ];
 
